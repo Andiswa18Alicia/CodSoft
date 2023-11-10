@@ -30,7 +30,9 @@ window.title("Calculator")
 
 
 # Load the background image
-bg_image = PhotoImage(file="_calculator.png")
+cwd = __file__
+#print("Current working dir: ", cwd[:-13])
+bg_image = PhotoImage(file=cwd[:-13]+"_calculator.png")
 
 
 # Get the screen width and height
